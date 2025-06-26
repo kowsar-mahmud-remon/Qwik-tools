@@ -1,12 +1,12 @@
 {
+  "cli": {
+    "version": ">= 14.4.1",
+    "appVersionSource": "remote"
+  },
   "build": {
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "android": {
-        "gradleCommand": ":app:assembleDebug",
-        "buildType": "debug"
-      },
       "env": {
         "KOTLIN_VERSION": "1.9.24"
       }
@@ -18,9 +18,13 @@
       }
     },
     "production": {
+      "autoIncrement": true,
       "env": {
         "KOTLIN_VERSION": "1.9.24"
       }
     }
+  },
+  "submit": {
+    "production": {}
   }
 }
