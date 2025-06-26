@@ -91,9 +91,8 @@ android {
         applicationId 'com.qwikit.ca.qwiktools'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 3
-        // versionName "1.0.2"
-        versionName "1.0.9"
+        versionCode 4
+        versionName "1.0.10"
     }
     signingConfigs {
         debug {
